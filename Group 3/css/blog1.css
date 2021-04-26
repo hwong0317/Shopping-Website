@@ -1,0 +1,111 @@
+.container{
+    margin: 0 20%;
+}
+
+.ImageBinformation{
+    width: 100%;
+    height: 500px;
+}
+
+.basicFoot{
+    width: 50%;
+    float: left;
+}
+
+.basicFootImageB{
+    width: 50%;
+    float: right;
+    margin: 10% 0%;
+}
+
+.basicFootImageB img{
+    text-align: center;
+
+}
+
+.ImageCinformation{
+    width: 100%;
+    height: 330px;
+}
+
+.basicFoot2{
+    width: 50%;
+    float: left;
+}
+
+.basicFootImageC{
+    width: 50%;
+    float: right;
+}
+
+.ImageDinformation{
+    width: 100%;
+    height: 320px;
+}
+
+.basicFoot3{
+    width: 50%;
+    float: left;
+}
+
+.basicFootImageD{
+    width: 50%;
+    float: right;
+}
+
+.question p{
+    text-align: center;
+}
+
+.shareButton{
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    text-align:right;
+    margin: 0;
+    z-index: -1;
+}
+
+
+.shareButton .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.shareButton .fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.shareButton .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.shareButton .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.shareButton .fa-instagram {
+      background: #125688;
+      color: white;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .basicFoot,.basicFoot2,.basicFoot3,.basicFootImageB,.basicFootImageC,.basicFootImageD{
+        width: 100%;
+    }
+
+    .container{
+    margin: 0 15%;
+    }
+}

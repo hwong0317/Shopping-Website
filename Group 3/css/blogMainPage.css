@@ -1,0 +1,57 @@
+.title{
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.featuredInformation img{
+    padding:0 220px ;
+}
+
+.featuredInformation p{
+    padding-left:50px ;
+}
+
+.featuredInformation .title{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.featuredInformation .btn{
+    margin-left: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+hr{
+    border-top:3px black solid;
+}
+
+.blogDetails{
+    width: 100%;
+}
+
+.col-3{
+    margin:10px;
+    width: 30%;
+    display: inline-block;
+}
+
+.col-3 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.blogDetails .btn{
+    margin-left: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    text-decoration: none;
+    padding: 10px;
+}

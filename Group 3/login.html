@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/login.css">
+   
+</head>
+<body>
+    <div id="image">
+        <img src="Images/loginBackground.png" style="width:1600px; height:200"> 
+    </div>
+
+    <div class="sideNav">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	    <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="qna.html">FAQ</a>
+            <a href="blogMainPage.html">Blog</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <script src="js/script"></script>
+    </div>   
+    
+    <!---account-page-->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <label for="UserName">Username:</label><br>
+                            <input type="text" placeholder="Username"><br>
+                            <label for="Pasword">Password:</label><br>
+                            <input type="password" placeholder="Password"><br>
+                            <button type="submit" class="btn">Login</button>
+                            <br>
+                            <a href="">Forget password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <label for="UserName">Username:</label><br>
+                            <input type="text" placeholder="Username"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" placeholder="Email"><br>
+                            <label for="Pasword">Password:</label><br>
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                            <a href="">Forget password</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+
+    </script>
+
+    <!--js for toggle Form-->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegFrom = document.getElementById("RegFrom");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+    </script>
+</body>    
+</html>

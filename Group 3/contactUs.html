@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>
+        Creattion Shoe Shop
+    </title>
+
+    <link rel="icon" href="Images/Image E.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contactus.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="userInformation">
+            <ul>
+                <li><a href="login.html">Account</a></li>
+                <p><a href="">|</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul> 
+        </div>
+
+        <div class="websiteName">
+            <img src="Images/LOGO.png" height= auto width= 200px/>
+        </div>
+
+        <div class="navigation">
+    <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="qna.html">FAQ</a>
+            <a href="blogMainPage.html">Blog</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+    </header>
+<br>
+<br>
+<br>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="qna.html">FAQ</a>
+        <a href="blogMainPage.html">Blog</a>
+        <a href="contactUs.html">Contact Us</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <script src="js/script"></script>
+
+    <div class="contactus">
+        <div class="row">
+            <div class="column">
+                <div class="information">
+                    <p><img src="images/phone.jpeg" class="middle" width="35px" height="40px" /> 012345678</p>
+                    <p><img src="images/email.jpeg" class="middle" width="35px" height="40px" /> creattion@gmail.com</p>
+                    <p><img src="images/location.jpeg" class="middle" width="35px" height="40px" /> 123 Jalan Hang Tuah,
+                        10000,
+                        Kuala Lumpur</p>
+                    <p><img src="images/opentime.jpeg" class="middle" width="35px" height="40px" /> 10am--4pm Mon--Fri
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="container">
+                    <form action="/action_page.php">
+
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input" type="text" placeholder="Name" name="name">
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fa fa-envelope icon"></i>
+                            <input class="input" type="text" placeholder="Email" name="email">
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fa fa-phone icon"></i>
+                            <input class="input" type="text" placeholder="Phone Number" name="phone-no">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-pencil-square-o icon"></i>
+                            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn"><i class="fa fa-paper-plane"></i>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="contact">
+        <ul>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <p>2021 Creattion. All rights reserved.©</p>
+    </div>
+</footer>
+
+</html>
